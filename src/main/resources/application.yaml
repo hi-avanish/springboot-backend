@@ -1,0 +1,14 @@
+server:
+  port: 8085
+  servlet:
+    context-path: ${SERVER_CONTEXT_PATH:/api}
+
+spring:
+  application:
+    name: demo
+
+  data:
+    mongodb:
+      host: ${MONGO_HOST:localhost}
+      port: ${MONGO_PORT:27017}
+      database: ${MONGO_DATABASE_NAME:PoSDB}
